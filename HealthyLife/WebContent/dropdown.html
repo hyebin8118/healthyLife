@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<style type="text/css">
+		h1{
+			background: balck;
+			margin: 0 30px 0 30px;
+			text-align: center;
+			color: gold;
+			font-weight: border;
+			font-style: normal;
+			text-decoration: underline;}
+		
+		ul{
+			background: gray;
+			padding: 3px;
+		}
+		
+		li{
+			display: inline-block;
+			padding: 10px 20px;
+		}
+		
+		li a{
+			padding: 5px 10px;
+			color: white;
+			text-decoration: none;
+		}
+		
+		li a:hover{
+			background: darkgray;
+		}
+		
+		li.droopdown{
+			display: inline-block;
+		}
+		
+		.dropdownContents{
+			display: none;
+			position: absolute;
+			background: ghostwhite;
+			box-shadow: 0px 8px 16px 0px tbga(0,0,0,0.2);
+		}
+		
+		.dropdownContents a{
+			display: block;
+			padding: 12px 16px;
+			text-decoration: none;
+			text-align: left;
+			color: black;
+		}
+		
+		.dropdownContents a:hover{
+			background: #FFE3EE;
+		}
+		
+		.dropdown:hover .dropdownContents{
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<h1>Cafe</h1>
+	<ul>
+		<li class="dropdown">
+			<a href="#home">Home</a>
+			<div class="dropdownContents">
+				<a href="#">Recipe</a>
+				<a href="#">Healthy</a>
+				<a href="#">Founded</a>
+			</div>
+		</li>
+		<li class="dropdown">
+			<a href="#Espresso">Espresso</a>
+			<div class="dropdownContents">
+				<a href="#">Recipe</a>
+				<a href="#">Healthy</a>
+				<a href="#">Founded</a>
+			</div>
+		</li>
+		<li class="dropdown">
+			<a href="#Cappucchino">Cappucchino</a>
+			<div class="dropdownContents">
+				<a href="#">Recipe</a>
+				<a href="#">Heathy</a>
+				<a href="#">Founded</a>
+			</div>
+		</li>
+		<li class="dropdown">
+			<a href="#CafeLatte">CafeLatte</a>
+			<div class="dropdownContents">
+				<a href="#">Recipe</a>
+				<a href="#">Heathy</a>
+				<a href="#">Founded</a>
+			</div>
+		</li>
+	</ul>
+	
+	<div style="height: auto">
+		<pre>
+			Article인데 왜 위에 나오고 지랄.
+		</pre>
+	</div>
+</body>
+</html>
